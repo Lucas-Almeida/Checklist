@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="checklistItem" id="GoN-8e-ZfL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="checklistItem" id="GoN-8e-ZfL" customClass="ChecklistTableViewCell" customModule="Checklist" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GoN-8e-ZfL" id="jqY-UE-wSm">
@@ -50,6 +50,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="checkmarkLabel" destination="D1G-gq-gRA" id="pMc-Rp-kjw"/>
+                                    <outlet property="todoTextLabel" destination="Z8L-z1-VO8" id="7W7-xz-scK"/>
                                     <segue destination="sRY-bL-tKD" kind="show" identifier="EditItemSegue" trigger="accessoryAction" id="mh6-yE-5VO"/>
                                 </connections>
                             </tableViewCell>
@@ -60,11 +62,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Checklists" id="nv0-Sl-KFo">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AVI-06-37v">
-                            <connections>
-                                <segue destination="sRY-bL-tKD" kind="show" identifier="AddItemSegue" id="YI6-NX-85B"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="AVI-06-37v">
+                                <connections>
+                                    <segue destination="sRY-bL-tKD" kind="show" identifier="AddItemSegue" id="YI6-NX-85B"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Delete" id="F6T-qc-VIe">
+                                <connections>
+                                    <action selector="deleteItems:" destination="mB2-Mo-NIO" id="ja6-8T-jv0"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>

@@ -9,7 +9,7 @@
 import Foundation
 
 class ChecklistItem: NSObject {
-    var text: String = ""
+    @objc var text: String = ""
     var isChecked: Bool = false
     
     func toggleChecked() {

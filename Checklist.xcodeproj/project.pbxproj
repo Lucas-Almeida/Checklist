@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0041592223D9AB50033E0E3 /* ChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041591223D9AB50033E0E3 /* ChecklistTableViewCell.swift */; };
 		A011B90D2239111F001B00BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A011B90C2239111F001B00BE /* AppDelegate.swift */; };
 		A011B90F2239111F001B00BE /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A011B90E2239111F001B00BE /* ChecklistViewController.swift */; };
 		A011B9122239111F001B00BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A011B9102239111F001B00BE /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0041591223D9AB50033E0E3 /* ChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewCell.swift; sourceTree = "<group>"; };
 		A011B9092239111F001B00BE /* Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A011B90C2239111F001B00BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A011B90E2239111F001B00BE /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				A011B9212239122E001B00BE /* IdentifierBundle.swift */,
 				A011B92322394490001B00BE /* ChecklistItem.swift */,
 				A011B92522399021001B00BE /* TodoList.swift */,
+				A0041591223D9AB50033E0E3 /* ChecklistTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				A011B92622399021001B00BE /* TodoList.swift in Sources */,
 				A011B90F2239111F001B00BE /* ChecklistViewController.swift in Sources */,
 				A011B90D2239111F001B00BE /* AppDelegate.swift in Sources */,
+				A0041592223D9AB50033E0E3 /* ChecklistTableViewCell.swift in Sources */,
 				A011B92422394490001B00BE /* ChecklistItem.swift in Sources */,
 				A011B9222239122E001B00BE /* IdentifierBundle.swift in Sources */,
 				A017D4B4223B1670006753C0 /* ItemDetailV.swift in Sources */,
